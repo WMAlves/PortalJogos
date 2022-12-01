@@ -10,7 +10,7 @@ function doSearch(){
     fetch(url)
     .then(res => res.json())
     .then(data=>{
-        let exibe=''
+        var exibe=''
         for(let i=0; i< data.results.length;i++){
             let game= data.results[i]
          exibe+=`<div class="col 12 col-sm-12 col-md-6 col-lg-3">
